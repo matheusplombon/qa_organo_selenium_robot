@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.12.5 on win32)" generated="2024-09-19T18:58:09.601566" rpa="false" schemaversion="5">
-<suite id="s1" name="Preenchimento Incorreto" source="C:\Users\matheus plombon\Desktop\curso-robot\preenchimento_incorreto.robot">
-<test id="s1-t1" name="Verificar se quando um campo obrigatório não for preenchido corretamente o sistema exibe uma mensagem de campo obrigatório" line="11">
+<robot generator="Robot 7.1 (Python 3.12.5 on win32)" generated="2024-09-20T16:39:43.660582" rpa="false" schemaversion="5">
+<suite id="s1" name="Preenchimento Incorreto" source="c:\Users\matheus plombon\Desktop\Aula - 5\testes\preenchimento_incorreto.robot">
+<test id="s1-t1" name="Verificar se quando um campo obrigatório não for preenchido corretamente o sistema exibe uma mensagem de campo obrigatório" line="7">
 <kw name="Dado que eu acesse o Organo" owner="setup_teardown" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-19T18:58:09.847594" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<msg time="2024-09-20T16:39:43.936553" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
 <arg>url=http://localhost:3000/</arg>
 <arg>browser=Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-19T18:58:09.847594" elapsed="2.063755"/>
+<status status="PASS" start="2024-09-20T16:39:43.936553" elapsed="2.234789"/>
 </kw>
-<status status="PASS" start="2024-09-19T18:58:09.846597" elapsed="2.064752"/>
+<status status="PASS" start="2024-09-20T16:39:43.935563" elapsed="2.235779"/>
 </kw>
-<kw name="Dado que eu clique no botão criar card">
+<kw name="Dado que eu clique no botão &quot;Criar Card&quot;" owner="cadastro_organo">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-19T18:58:11.912346" level="INFO">Clicking element 'id:form-botao'.</msg>
-<arg>${CAMPO_CARD}</arg>
+<msg time="2024-09-20T16:39:46.177707" level="INFO">Clicking element 'id:form-botao'.</msg>
+<arg>${BOTAO_CARD}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-19T18:58:11.912346" elapsed="0.061834"/>
+<status status="PASS" start="2024-09-20T16:39:46.176709" elapsed="0.083670"/>
 </kw>
-<status status="PASS" start="2024-09-19T18:58:11.911349" elapsed="0.063829"/>
+<status status="PASS" start="2024-09-20T16:39:46.175206" elapsed="0.085173"/>
 </kw>
-<kw name="Então sistema deve apresentar mensagem de campo obrigatório">
+<kw name="Então sistema deve apresentar mensagem de campo obrigatório" owner="cadastro_organo">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-09-19T18:58:11.993129" level="INFO">Element 'id:form-nome-erro' is displayed.</msg>
+<msg time="2024-09-20T16:39:46.283449" level="INFO">Element 'id:form-nome-erro' is displayed.</msg>
 <arg>id:form-nome-erro</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-19T18:58:11.975178" elapsed="0.018949"/>
+<status status="PASS" start="2024-09-20T16:39:46.261377" elapsed="0.024067"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-09-19T18:58:12.010085" level="INFO">Element 'id:form-cargo-erro' is displayed.</msg>
+<msg time="2024-09-20T16:39:46.314595" level="INFO">Element 'id:form-cargo-erro' is displayed.</msg>
 <arg>id:form-cargo-erro</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-19T18:58:11.994127" elapsed="0.016954"/>
+<status status="PASS" start="2024-09-20T16:39:46.285444" elapsed="0.029151"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-09-19T18:58:12.024047" level="INFO">Element 'id:form-times-erro' is displayed.</msg>
+<msg time="2024-09-20T16:39:46.335279" level="INFO">Element 'id:form-times-erro' is displayed.</msg>
 <arg>id:form-times-erro</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-19T18:58:12.011081" elapsed="0.012966"/>
+<status status="PASS" start="2024-09-20T16:39:46.315593" elapsed="0.020196"/>
 </kw>
-<status status="PASS" start="2024-09-19T18:58:11.975178" elapsed="0.048869"/>
+<status status="PASS" start="2024-09-20T16:39:46.261377" elapsed="0.074412"/>
 </kw>
 <kw name="Fechar o navegador" owner="setup_teardown" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-19T18:58:12.024047" elapsed="2.125692"/>
+<status status="PASS" start="2024-09-20T16:39:46.336782" elapsed="2.240802"/>
 </kw>
-<status status="PASS" start="2024-09-19T18:58:12.024047" elapsed="2.126645"/>
+<status status="PASS" start="2024-09-20T16:39:46.335789" elapsed="2.241795"/>
 </kw>
-<status status="PASS" start="2024-09-19T18:58:09.845630" elapsed="4.305062"/>
+<status status="PASS" start="2024-09-20T16:39:43.934005" elapsed="4.644088"/>
 </test>
-<status status="PASS" start="2024-09-19T18:58:09.603561" elapsed="4.550151"/>
+<status status="PASS" start="2024-09-20T16:39:43.665569" elapsed="4.913518"/>
 </suite>
 <statistics>
 <total>
@@ -64,5 +64,19 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2024-09-20T16:39:43.923741" level="ERROR">Error in file 'c:\Users\matheus plombon\Desktop\Aula - 5\resources\main.robot' on line 3: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'pkg_resources'
+Traceback (most recent call last):
+  File "C:\Users\matheus plombon\AppData\Local\Programs\Python\Python312\Lib\site-packages\FakerLibrary\__init__.py", line 1, in &lt;module&gt;
+    import pkg_resources
+PYTHONPATH:
+  c:\Users\matheus plombon\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_debug_adapter
+  C:\Users\matheus plombon\Desktop\Aula - 5
+  c:\Users\matheus plombon\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src
+  c:\Users\matheus plombon\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored
+  C:\Users\matheus plombon\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\matheus plombon\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\matheus plombon\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\matheus plombon\AppData\Local\Programs\Python\Python312
+  C:\Users\matheus plombon\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
 </errors>
 </robot>
